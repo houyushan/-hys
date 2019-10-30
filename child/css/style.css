@@ -1,0 +1,23 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{background:black; color:white; font-family: 'georgia' }
+/* spotlightWrapper */
+.spotlightWrapper{width:93%;margin:20px auto;}
+.spotlightWrapper ul li{float:left;position:relative;_overflow:hidden;}
+.spotlightWrapper ul li a img{width:92%;position:relative;border:none;}
+.spotlightWrapper ul li a img.active{border:4px solid white;z-index:1;left:-4px;top:-4px;}
+
+/* boxx */
+.boxx{width:92%;margin:0px auto;}
+.boxx ul li{float:center;position:relative;_overflow:hidden;}
+.boxx ul li a img{width:92%;position:relative;border:none;}
+.boxx ul li a img.active{border:4px solid white;z-index:1;left:-4px;top:-4px;}
+
+/* box1 */
+.box1{width:98%;margin:0px auto;}
+
+
+.fixeds { width:100%; height:10; background:#000; position:fixed; opacity:0.2;filter:alpha(opacity=20); top:0; left:0;}
+.fixed { width:100%; height:auto; background:#000; position:fixed; opacity:0.2;filter:alpha(opacity=20); top:10; left:0;}
+.fixedx { width:100%; height:10; background:#000; position:fixed; opacity:0.2;filter:alpha(opacity=20);top:52;left:0;}

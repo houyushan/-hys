@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>闪耀实验室</title>
+
+<meta name="keywords" content="少儿编程,DIY,机器人，教育，创新，在线编程,闪耀" />
+<meta name="description" content="少儿编程,DIY,机器人，教育，创新，在线编程,闪耀" />
+
+<link type="text/css" rel="stylesheet" href="css/layout.css">
+
+<!--[if lt IE 9]>
+<script src="js/html5.min.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+
+<script type="text/javascript">
+
+$(function(){
+
+	var filterList = {
+
+		init:function(){
+			// MixItUp plugin
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+
+		},
+		
+		hoverEffect:function(){
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(function(){
+				$(this).find('.label').stop().animate({bottom:0},200,'easeOutQuad');
+				$(this).find('img').stop().animate({top:-30},500,'easeOutQuad');				
+			},function(){
+				$(this).find('.label').stop().animate({bottom:-40},200,'easeInQuad');
+				$(this).find('img').stop().animate({top:0},300,'easeOutQuad');								
+			});				
+		}
+
+	};
+
+	// Run the show!
+	filterList.init();
+	
+});	
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<ul id="filters" class="clearfix">
+	
+<li><span class="filter active" data-filter="gs app icon logo web"><font face="微软雅黑" style="font-size: 1.5em;">
+编程入门</font></span></li>
+
+<li><span class="filter" data-filter="gs"><font face="微软雅黑" style="font-size: 1.5em;">编码熊宝</font></span></li>		
+<li><span class="filter" data-filter="app"><font face="微软雅黑" style="font-size: 1.5em;">APP发明家</font></span></li>
+<li><span class="filter" data-filter="logo"><font face="微软雅黑" style="font-size: 1.5em;">智能硬件</font></span></li>
+<li><span class="filter" data-filter="web"><font face="微软雅黑" style="font-size: 1.5em;">Python语言</font></span></li>	 
+
+
+</ul>
+	
+<div id="portfoliolist">
+
+<div class="portfolio gs app logo web" data-cat="gs app logo web">
+			<div class="portfolio-wrapper">
+<a href="https://www.baidu.com/" target=_blank><img src="img/portfolios/gs/9.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >www.baidu.com</a><span class="text-category">度娘在此</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+<div class="portfolio gs app logo web" data-cat="gs app logo web">
+			<div class="portfolio-wrapper">
+<a href="https://www.shinelab.cn/" target=_blank><img src="img/portfolios/gs/5.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >www.shinelab.cn</a><span class="text-category">闪亮实验室</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+
+<div class="portfolio gs app logo web" data-cat="gs app logo web">
+			<div class="portfolio-wrapper">				 
+<a href="https://www.shinelab.cn/platform" target=_blank><img src="img/portfolios/gs/1.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >www.shinelab.cn/platform</a><span class="text-category">编程软件</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+<div class="portfolio gs" data-cat="gs">
+			<div class="portfolio-wrapper">
+<a href="http://qr18.cn/CkMVRu" target=_blank><img src="img/portfolios/gs/7.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >eclass.shinelab.cn</a><span class="text-category">习程开场</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+
+<div class="portfolio gs" data-cat="gs">
+			<div class="portfolio-wrapper">
+<a href="https://game.shinelab.cn/" target=_blank><img src="img/portfolios/gs/6.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >game.shinelab.cn</a><span class="text-category">编程时刻</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+
+<div class="portfolio app" data-cat="app">
+			<div class="portfolio-wrapper">				 
+<a href="http://qr18.cn/EcuaGg" target=_blank><img src="img/portfolios/app/3.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >www.shinelab.cn</a><span class="text-category">知识铺垫</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+
+<div class="portfolio gs" data-cat="gs">
+			<div class="portfolio-wrapper">
+				 <a href="https://simg.shinelab.cn/" target=_blank><img src="img/portfolios/gs/2.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >codebear.shinelab.cn/</a><span class="text-category">边做边学</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+<div class="portfolio gs" data-cat="gs">
+			<div class="portfolio-wrapper">
+				 <a href="http://qr18.cn/A4Yzfw" target=_blank><img src="img/portfolios/gs/3.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >codebear.shinelab.cn/</a><span class="text-category">看老师如何做的</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+<div class="portfolio app" data-cat="app">
+			<div class="portfolio-wrapper">				 
+<a href="http://app.shinelab.cn/" target=_blank><img src="img/portfolios/app/4.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >app.shinelab.cn</a><span class="text-category">编程入口</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+<div class="portfolio gs" data-cat="gs">
+			<div class="portfolio-wrapper">
+				 <a href="https://eclass.shinelab.cn/main/lp/lp_controller.php?cidReq=HOC001&id_session=0&gidReq=0&gradebook=0&origin=&action=view&lp_id=47" target=_blank><img src="img/portfolios/gs/4.jpg" alt="" /></a>
+			<div class="label">
+				<div class="label-text"><a class="text-title" >Whack a Mole</a><span class="text-category">欢乐打地鼠教程</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+<div class="portfolio app" data-cat="app">
+			<div class="portfolio-wrapper">				 
+<a href="http://qr18.cn/AqEnvT" target=_blank><img src="img/portfolios/app/5.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >www.shinelab.cn</a><span class="text-category">编程参考</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+<div class="portfolio app" data-cat="app">
+			<div class="portfolio-wrapper">				 
+<a href="https://eclass.shinelab.cn/main/lp/lp_controller.php?cidReq=HOC001&id_session=0&gidReq=0&gradebook=0&origin=&action=view&lp_id=45" target=_blank><img src="img/portfolios/app/6.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >APP Compass</a><span class="text-category">指南针手机应用</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+<div class="portfolio gs app logo web" data-cat="gs app logo web">
+			<div class="portfolio-wrapper">				 
+<a href="https://cli.im/" target=_blank><img src="img/portfolios/app/7.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >cli.im</a><span class="text-category">草料编辑</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+<div class="portfolio gs app logo web" data-cat="gs app logo web">
+			<div class="portfolio-wrapper">
+<a href="https://zaixianwangyebianji.51240.com/" target=_blank><img src="img/portfolios/app/8.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >zaixianwangyebianji</a><span class="text-category">静态网页</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+<div class="portfolio gs app logo web" data-cat="gs app logo web">
+			<div class="portfolio-wrapper">
+<a href="http://www.red.net.cn/partner/12624" target=_blank><img src="img/portfolios/gs/8.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >www.red.net.cn</a><span class="text-category">空间域名</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+
+<div class="portfolio gs app logo web" data-cat="gs app logo web">
+			<div class="portfolio-wrapper">
+<a href="https://www.shinelab.cn/" target=_blank><img src="img/portfolios/gs/10.jpg" alt="" /></a>
+				<div class="label">
+					<div class="label-text"><a class="text-title" >www.shinelab.cn</a><span class="text-category">制作页面</span></div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+
+<div class="portfolio gs app logo web" data-cat="gs app logo web">
+			<div class="portfolio-wrapper">
+				<a href="#"><img src="img/portfolios/web/a1.jpg" alt="" />
+				<div class="label">
+					<div class="label-text"> <a class="text-title">Return</a><span class="text-category">返回</span> </div>
+					<div class="label-bg"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+</div>
+
+</body>
+
+</html>
